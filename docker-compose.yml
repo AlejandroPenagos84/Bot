@@ -1,0 +1,11 @@
+services:
+  activemq:
+    image: docker.io/apache/activemq-classic:latest
+    container_name: activemq
+    ports:
+      - "61613:61613"
+      - "61616:61616"
+      - "8161:8161"
+    environment:
+      ACTIVEMQ_OPTS_MEMORY: "-Xms64M -Xmx1G"
+    restart: unless-stopped

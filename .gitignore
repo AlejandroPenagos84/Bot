@@ -1,0 +1,28 @@
+# Variables de entorno (secretos)
+.env
+.env.*
+
+# Entorno virtual
+.venv/
+venv/
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+
+# Cachés de herramientas
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Builds y paquetes
+build/
+dist/
+*.egg-info/
+
+# Bases de datos locales
+*.db
+*.db-shm
+*.db-wal
